@@ -1,5 +1,5 @@
 {
-    "name": "smart-debounce",
+  "name": "next-gen-debounce",
   "version": "1.0.3",
   "description": "TypeScript-first debounce utility with async support, condition gating, cancel/flush, and event-based cancellation.",
   "keywords": [
