@@ -1,1 +1,52 @@
- 
+{
+  "name": "smart-debounce",
+  "version": "1.0.0",
+  "description": "TypeScript-first debounce utility with async support, condition gating, cancel/flush, and event-based cancellation.",
+  "keywords": [
+    "debounce",
+    "throttle",
+    "typescript",
+    "async",
+    "utility",
+    "browser",
+    "node",
+    "rate-limit"
+  ],
+  "license": "MIT",
+  "author": "prime tec <numan811a@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Prime-Tec-Solutions/smart-debounce.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Prime-Tec-Solutions/smart-debounce/issues"
+  },
+  "homepage": "https://github.com/Prime-Tec-Solutions/smart-debounce#readme",
+  "sideEffects": false,
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs",
+      "default": "./dist/index.mjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build": "tsup src/index.ts --dts --format esm,cjs --minify --sourcemap --clean",
+    "dev": "tsup src/index.ts --dts --format esm,cjs --watch",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "tslib": "^2.6.3",
+    "tsup": "^8.0.1",
+    "typescript": "^5.5.4"
+  }
+} 
