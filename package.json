@@ -1,6 +1,6 @@
 {
   "name": "next-gen-debounce",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "TypeScript-first debounce utility with async support, condition gating, cancel/flush, and event-based cancellation.",
   "keywords": [
     "debounce",
@@ -16,12 +16,12 @@
   "author": "prime tec <numan811a@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Prime-Tec-Solutions/smart-debounce.git"
+    "url": "git+https://github.com/Prime-Tec-Solutions/next-gen-debounce.git"
   },
   "bugs": {
-    "url": "https://github.com/Prime-Tec-Solutions/smart-debounce/issues"
+    "url": "https://github.com/Prime-Tec-Solutions/next-gen-debounce/issues"
   },
-  "homepage": "https://github.com/Prime-Tec-Solutions/smart-debounce#readme",
+      "homepage": "https://github.com/Prime-Tec-Solutions/next-gen-debounce#readme",
   "sideEffects": false,
   "type": "module",
   "main": "./dist/index.cjs",

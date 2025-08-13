@@ -1,16 +1,16 @@
-# 🚀 smart-debounce
+# 🚀 next-gen-debounce
 
 > **The Ultimate TypeScript Debounce Utility** - Async-ready, feature-rich, and developer-friendly
 
-[![npm version](https://badge.fury.io/js/smart-debounce.svg)](https://badge.fury.io/js/smart-debounce)
+[![npm version](https://badge.fury.io/js/next-gen-debounce.svg)](https://badge.fury.io/js/next-gen-debounce)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0+-blue.svg)](https://www.typescriptlang.org/)
 
-## ✨ Why smart-debounce?
+## ✨ Why next-gen-debounce?
 
-**Traditional debounce libraries have limitations that smart-debounce solves:**
+**Traditional debounce libraries have limitations that next-gen-debounce solves:**
 
-| Feature | Lodash | Underscore | smart-debounce |
+| Feature | Lodash | Underscore | next-gen-debounce |
 |---------|--------|------------|----------------|
 | Async function support | ❌ Returns `undefined` | ❌ Returns `undefined` | ✅ Returns `Promise<Result>` |
 | Conditional execution | ❌ No | ❌ No | ✅ `condition` option |
@@ -30,11 +30,11 @@
 ## 📦 Installation
 
 ```bash
-npm install smart-debounce
+npm install next-gen-debounce
 # or
-yarn add smart-debounce
+yarn add next-gen-debounce
 # or
-pnpm add smart-debounce
+pnpm add next-gen-debounce
 ```
 
 ## 🚀 Quick Start
@@ -42,7 +42,7 @@ pnpm add smart-debounce
 ### Basic Usage
 
 ```typescript
-import { debounce } from 'smart-debounce';
+import { debounce } from 'next-gen-debounce';
 
 // Simple debounced function
 const saveData = debounce(async (data: any) => {
@@ -60,7 +60,7 @@ const result = await saveData({ name: 'John' });
 ### Advanced Search with Cancellation
 
 ```typescript
-import { debounce } from 'smart-debounce';
+import { debounce } from 'next-gen-debounce';
 
 const searchUsers = debounce(
   async (query: string) => {
@@ -115,7 +115,7 @@ function SearchComponent() {
 ### 1. Auto-Save with Network Awareness
 
 ```typescript
-import { debounce } from 'smart-debounce';
+import { debounce } from 'next-gen-debounce';
 
 const autoSave = debounce(
   async (content: string) => {
@@ -146,7 +146,7 @@ editor.onChange((content) => {
 ### 2. Smart Form Validation
 
 ```typescript
-import { debounce } from 'smart-debounce';
+import { debounce } from 'next-gen-debounce';
 
 const validateEmail = debounce(
   async (email: string) => {
@@ -189,7 +189,7 @@ const handleEmailChange = async (email: string) => {
 ### 3. Infinite Scroll with Debounced Loading
 
 ```typescript
-import { debounce } from 'smart-debounce';
+import { debounce } from 'next-gen-debounce';
 
 const loadMorePosts = debounce(
   async (page: number) => {
@@ -217,7 +217,7 @@ const observer = new IntersectionObserver((entries) => {
 ### 4. Real-time Collaboration with Conflict Prevention
 
 ```typescript
-import { debounce } from 'smart-debounce';
+import { debounce } from 'next-gen-debounce';
 
 const syncDocument = debounce(
   async (documentId: string, changes: any) => {
@@ -303,8 +303,8 @@ const search = _.debounce(async (query) => {
 
 const result = search('test'); // undefined! 😞
 
-// ✅ smart-debounce - Returns Promise
-import { debounce } from 'smart-debounce';
+// ✅ next-gen-debounce - Returns Promise
+import { debounce } from 'next-gen-debounce';
 
 const search = debounce(async (query) => {
   const response = await fetch(`/api/search?q=${query}`);
@@ -324,8 +324,8 @@ const save = _.debounce((data) => {
   // No type safety, no async support, no cancellation
 }, 1000);
 
-// ✅ smart-debounce - Full TypeScript + modern features
-import { debounce } from 'smart-debounce';
+// ✅ next-gen-debounce - Full TypeScript + modern features
+import { debounce } from 'next-gen-debounce';
 
 const save = debounce(
   async (data: SaveData) => {
@@ -341,7 +341,7 @@ const save = debounce(
 ### Chaining Multiple Debounced Functions
 
 ```typescript
-import { debounce } from 'smart-debounce';
+import { debounce } from 'next-gen-debounce';
 
 const validateInput = debounce(
   async (value: string) => {
@@ -371,7 +371,7 @@ const handleInput = async (value: string) => {
 ### Conditional Debouncing
 
 ```typescript
-import { debounce } from 'smart-debounce';
+import { debounce } from 'next-gen-debounce';
 
 const expensiveOperation = debounce(
   async (data: any) => {
@@ -391,7 +391,7 @@ const expensiveOperation = debounce(
 ### Error Handling
 
 ```typescript
-import { debounce, DebounceCancelledError } from 'smart-debounce';
+import { debounce, DebounceCancelledError } from 'next-gen-debounce';
 
 const apiCall = debounce(
   async (params: any) => {
@@ -426,7 +426,7 @@ try {
 
 ## 📊 Benchmarks
 
-| Scenario | Without Debounce | With smart-debounce | Improvement |
+| Scenario | Without Debounce | With next-gen-debounce | Improvement |
 |----------|------------------|-------------------|-------------|
 | Search input (1000 chars) | 100 API calls | 1 API call | 99% reduction |
 | Auto-save (10 min typing) | 600 saves | 12 saves | 98% reduction |
@@ -448,6 +448,6 @@ MIT License - see [LICENSE](LICENSE) file for details.
 
 ---
 
-**Made with ❤️ by the smart-debounce team**
+**Made with ❤️ by the next-gen-debounce team**
 
-[GitHub](https://github.com/your-org/smart-debounce) • [Issues](https://github.com/your-org/smart-debounce/issues) • [NPM](https://www.npmjs.com/package/smart-debounce)
+[GitHub](https://github.com/your-org/next-gen-debounce) • [Issues](https://github.com/your-org/next-gen-debounce/issues) • [NPM](https://www.npmjs.com/package/next-gen-debounce)
